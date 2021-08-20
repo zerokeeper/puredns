@@ -127,7 +127,7 @@ You can save the following information to files to reuse it in your workflows:
 
 * **domains**: clean list of domains that resolve correctly
 * **wildcard root domains**: list of the wildcard root domains found (i.e., *\*.store.yahoo.com*)
-* **massdns results file (-o Snl text output)**: can be used as a reference and to extract A and CNAME records.
+* **massdns results file (-o S text output)**: can be used as a reference and to extract A and CNAME records.
 
 ```
 puredns resolve domains.txt --write valid_domains.txt \

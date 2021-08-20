@@ -26,7 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Some command line flags have changed to be POSIX compliant, use --help on commands to see the changes.
 - Rewrite wildcard detection algorithm to be more robust.
 - Remove dependency on 'pv' and do progress bar and rate limiting internally instead.
-- Massdns output file is now written in -o Snl format.
+- Massdns output file is now written in -o S format.
 - A default list of public resolvers is no longer provided as a reference. Best results will be obtained by curating your own list, for example using [public-dns.info](https://public-dns.info/nameservers-all.txt) and [DNS Validator](https://github.com/vortexau/dnsvalidator).
 - Remove --write-answers command line option since the full wildcard answers are no longer kept in memory to optimize for large files. This might come back in a future release if requested.
 

@@ -25,7 +25,7 @@ func NewCacheReader(r io.ReadCloser) *CacheReader {
 	}
 }
 
-// Read reads a massdns cache from a file (created with -o Snl), can save the valid domains to a writer,
+// Read reads a massdns cache from a file (created with -o S), can save the valid domains to a writer,
 // fill a wildcarder.DNSCache object, and return the number of valid domains in the cache.
 // Subsequent calls to Read will resume without starting over.
 func (c CacheReader) Read(w io.Writer, cache *wildcarder.DNSCache, maxCount int) (count int, err error) {

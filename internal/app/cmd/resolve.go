@@ -44,7 +44,7 @@ The <file> argument can be omitted if the domains to resolve are read from stdin
 	resolveFlags.IntVarP(&resolveOptions.WildcardTests, "wildcard-tests", "n", resolveOptions.WildcardTests, "number of tests to perform to detect DNS load balancing")
 	resolveFlags.IntVar(&resolveOptions.WildcardBatchSize, "wildcard-batch", resolveOptions.WildcardBatchSize, "number of subdomains to test for wildcards in a single batch (0 = unlimited) (default unlimited)")
 	resolveFlags.StringVarP(&resolveOptions.WriteDomainsFile, "write", "w", resolveOptions.WriteDomainsFile, "write found domains to a file")
-	resolveFlags.StringVar(&resolveOptions.WriteMassdnsFile, "write-massdns", resolveOptions.WriteMassdnsFile, "write massdns database to a file (-o Snl format)")
+	resolveFlags.StringVar(&resolveOptions.WriteMassdnsFile, "write-massdns", resolveOptions.WriteMassdnsFile, "write massdns database to a file (-o S format)")
 	resolveFlags.StringVar(&resolveOptions.WriteWildcardsFile, "write-wildcards", resolveOptions.WriteWildcardsFile, "write wildcard subdomain roots to a file")
 	resolveFlags.BoolVar(&resolveOptions.SkipSanitize, "skip-sanitize", resolveOptions.SkipSanitize, "do not sanitize the list of domains to test")
 	resolveFlags.BoolVar(&resolveOptions.SkipWildcard, "skip-wildcard-filter", resolveOptions.SkipWildcard, "do not perform wildcard detection and filtering")
