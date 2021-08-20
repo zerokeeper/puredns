@@ -6,3 +6,4 @@
 *.mprof
 cover.out
 .idea
+resolvers.txt
